@@ -1,0 +1,16 @@
+name: rzem-ai-hermes-plugin-memory
+version: 0.1.0
+description: "PostgreSQL + pgvector memory provider backed by the agent-memory-mcp server. Cross-session semantic search/capture, per-agent KV store, and LLM usage metering. Requires a reachable agent-memory-mcp instance (defaults to http://127.0.0.1:3002) and a HERMES_MEMORY_AGENT_ID env var."
+author: rzem-ai
+kind: exclusive
+requires_env:
+  - HERMES_MEMORY_AGENT_ID
+provides_tools:
+  - memory_search
+  - memory_capture
+  - memory_forget
+  - memory_kv_get
+  - memory_kv_set
+  - memory_kv_delete
+  - memory_kv_list
+  - memory_usage_today
