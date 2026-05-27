@@ -20,7 +20,7 @@ dev = [
 ]
 
 [project.entry-points."hermes.plugins"]
-memory = "hermes_plugin_memory.plugin:plugin"
+memory = "hermes_plugin_memory:plugin"
 
 [build-system]
 requires = ["hatchling"]
