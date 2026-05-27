@@ -191,7 +191,7 @@ class RzemMemoryProvider(MemoryProvider):
             {
                 "key": "base_url",
                 "description": "agent-memory MCP server URL (HTTP/SSE transport)",
-                "default": "http://127.0.0.1:3002",
+                "default": "http://127.0.0.1:3000",
                 "env_var": "HERMES_MEMORY_BASE_URL",
             },
             {
